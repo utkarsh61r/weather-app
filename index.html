@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App With JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAWRJREFUSEvdlttNA0EMRW86gU6gEqASoBKgEugEOoEcKZa81viRSJsPLI0UZXZ9xr72eA+6sh2uzNMUeCOJdXc64NfxN+ts64AAPguvP5I+jvsvU3IGJJo3F5H5A8BetHdJr5LYLy0DfjvHOMEZTs0svc/hufsOugKSQtMKUJUuwI+SAGMc6qkKMQK9Zh3M++VQBgXos7HhR6ClkgokPVPzmiPBbfZiBP6eHixPmTjz2QG4LCAPRAsqE0tfKEImSjKEkZ1ln3qg16Hrz4xrkqT6r4ClBo2oZwFHGjTAtgZ8hCMNCuCoBqJW1vSXpHX0bgT6U17a+GmFkp1VNdIagKeTwFd3e2GsgGhJemwq2OWNM2tmm49cZ3bvEgD7XBrprKzGk7+UrVay8eT/L6FdgwN9WMxFfwAbXb7KU2gHNMfxEwOHrJi6FjoFTqcGz5XQPYARupk8ewENSgVvhvGewKUM/x/4B0QsXR26yXHeAAAAAElFTkSuQmCC"/></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="images/404.png" alt="404 Error"/>
+          
+        </div>
+
+        <div class="weather-body">
+            <img src="images/cloud.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAASJJREFUSEu9ld0RAjEIhNdOtBK1E+1EK1Er0U60E3VnLjP5gRwQPV7u5ZKPJQussHCsFuYhClwD2AG4ehOOAAl7TqAXgD0Afk3hBVLVvbrZBfUAJVhim6FWYA/mglqAFlgO3fQe0wKkQWgUazwmI4n/zwFpECr0xvl74CQd6gE9pazvVk3UA0bVJTiHwrHORAMeAFy8dRT6szGQBiSM0NGgwmL8aUCvM7XEGsdqwPeotGzWFmWVgPlwHuXSrYsCmXAhSivpaEuorfFvoNmlv+hDquT7FctZU0jjsBcjczQ0aXhoxK2NO1MWc9siUlrC+HZs+ibmgEkpXWvZid1d2PRIp8sJo9qt8K7JFDdtB+b3WhTWeSSlNBRhYum05CPAoXH3AfV+Nx26dpajAAAAAElFTkSuQmCC"/>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAXFJREFUSEvFlu11wjAMRcUmZZK2k5ROUpikZZLCJG0nAW6OlfNiHKI4LvgPObHw1dOXs7I7r9WdeRYFPpnZJjn3a2ZftY5GgIA+MwDQdzM7zAVHgCc5FBBqWTyvWwNV3WtS9GJm3wmEylnhjSgsifhJSneXza0Y8PwsUdhn++GiUeiYQlSzly9CT3T4HQAJH95NLa9W7MghB6HsQ3KLMs5yByguoAMglaiHTYE9p9h5iPuD05/Vkc5ec+jxnwIdU/FoS3gRkVN9T0XjDOsKOAWq2dcq7yq6tkojcNSRJs9jl++akEZhPiCw79tHgXOLJgIewGrbIgL6S0ZMoa7/fP1nDouOPRRYyqE3d+mKyhV46K7m51hIlwL13HziFHNIv2gpY+RXD+9LgzlX+SZ2xaurdQ612YsqlwL1NnC1fk0RHVQO1hKgDmafJHo7NAfi+dilmw+VZo2fD2gOvvlFtySk7rVXNvkEdvPTsQUwMlt7mzMXW04dBx7YFwAAAABJRU5ErkJggg=="/>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+</html>
